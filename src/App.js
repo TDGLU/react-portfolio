@@ -6,6 +6,7 @@ import Contant from './components/Contact'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Work from './components/Work'
+import Footer from './components/Footer'
 
 function App() {
   return (
