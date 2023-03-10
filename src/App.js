@@ -4,22 +4,28 @@ import './styling/App.css';
 import About from './components/pages/About'
 import Home from './components/pages/Home'
 import Contant from './components/Contact'
-import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import PortfolioContainer from './components/PortfolioContainer'
 import Work from './components/Work'
 
 function App() {
   return (
+    <>
+      <Navbar />
 
-    <Router>
+      {/* Page  */}
+      <div className="page-wrapper">
+       <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/navbar" element={<Navbar />} />
+            <Route path="/projects" element={<Work />} />
+            <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
 
-      <PortfolioContainer />
-
-    </Router>
-
-  );
+      <Footer  />
+    </>
+  )
 }
 
 export default App;
