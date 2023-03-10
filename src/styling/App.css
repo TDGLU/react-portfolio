@@ -9,7 +9,7 @@ body {
 
 /* Navbar */
 
-.navbar {
+navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,19 +19,19 @@ body {
 
 }
 
-.navbar ul {
+navbar ul {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
   list-style: none;
 }
 
-.navbar ul li a {
+navbar ul li a {
   color: white !important;
   text-decoration: none;
 }
 
-.navbar ul li a:hover {
+navbar ul li a:hover {
   color: rgb(0, 0, 150) !important;
   text-decoration: underline;
 }

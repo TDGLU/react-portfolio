@@ -1,5 +1,4 @@
 import React from 'react';
-import PortfolioContainer from './components/PortfolioContainer';
 import './styling/App.css';
 import About from './components/pages/About'
 import Home from './components/pages/Home'
@@ -15,12 +14,9 @@ function App() {
 
       {/* Page  */}
       <div className="page-wrapper">
-       <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/navbar" element={<Navbar />} />
-            <Route path="/projects" element={<Work />} />
-            <Route path="/about" element={<About />} />
-        </Routes>
+        <Navbar />
+        <Work />
+        <About />
       </div>
 
       <Footer  />
