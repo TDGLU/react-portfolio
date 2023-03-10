@@ -12,4 +12,4 @@ const Contact = () => {
 }
 
 
-export default Hero;
+export default Contact;
