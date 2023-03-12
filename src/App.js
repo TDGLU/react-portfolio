@@ -4,8 +4,8 @@ import About from './components/pages/About'
 import Home from './components/pages/Home'
 import Contant from './components/Contact'
 import Hero from './components/Hero'
+import Projects from './components/pages/Projects';
 import Navbar from './components/Navbar'
-import Work from './components/Work'
 import Footer from './components/Footer'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       {/* Page  */}
       <div className="page-wrapper">
         <Navbar />
-        <Work />
+        <Projects />
         <About />
       </div>
 

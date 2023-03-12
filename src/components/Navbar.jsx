@@ -3,9 +3,12 @@ import React from 'react';
 const Navbar = () => {
 
   return (
-    <header>
-      <h1>Luke's Portfolio</h1>
-    </header>
+    <nav className='navbarContainer'>
+      <div className='container'>
+        <a href="/#hero" className="logo">Luke</a>
+
+      </div>
+    </nav>
   )
 }
 
